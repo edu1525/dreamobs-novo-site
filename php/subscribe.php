@@ -1,4 +1,6 @@
 <?php
+	header('Access-Control-Allow-Origin: *');
+	header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 
 	// MailChimp
 	$APIKey = '53bb3bcad3947b9c5b45884b439097******';
@@ -13,10 +15,10 @@
 
 	if($api->listSubscribe($list_id, $email) === true) {
 		$sendstatus = 1;
-		$message = '<div class="alert alert-success subscription-success" role="alert"><strong>Success!</strong> Check your email to confirm sign up.</div>';
+		$message = '<div class="alert alert-success subscription-success" role="alert"><strong>Successo!</strong> Verifique seu E-mail para confirmar a assinatura.</div>';
 	} else {
 		$sendstatus = 0;
-		$message = '<div class="alert alert-danger subscription-error" role="alert"><strong>Error:</strong> ' . $api->errorMessage.'</div>';
+		$message = '<div class="alert alert-danger subscription-error" role="alert"><strong>Erro:</strong> ' . $api->errorMessage.'</div>';
 	}
 
 	$result = array(
