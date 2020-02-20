@@ -351,6 +351,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         $(function(){
             $(".video-player").mb_YTPlayer();
+            $('.video-player').playYTP();
         });
 
         $('#video-play').click(function(event) {
