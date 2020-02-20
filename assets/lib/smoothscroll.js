@@ -206,7 +206,6 @@ function ssc_overflowingAncestor(e) {
 }
 
 function ssc_addEvent(e, t, n) {
-    e.preventDefault();
     window.addEventListener(e, t, n || false)
     document.addEventListener("mousewheel", this.mousewheel.bind(this), { passive: false });
 
