@@ -50,6 +50,8 @@
   <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
   <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <link href="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
   <!-- Main stylesheet and color file-->
   <link href="assets/css/style.css" rel="stylesheet">
   <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
@@ -365,9 +367,11 @@
     <section class="home-section home-full-height bg-dark-30" id="home"
       data-background="assets/images/dreamobs/home_background.jpg">
 
-      <div class="video-player"
+     
+      <div class="player"
         data-property="{videoURL:'https://www.youtube.com/watch?v=UNOmaFs6KaY', containment:'.home-section', startAt:1, mute:false, autoPlay:true, loop:true, opacity:100 , showControls:false, showYTLogo:false, showInfo: false, vol:0}">
       </div>
+
       <div class="video-controls-box">
         <div class="container">
           <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a
@@ -512,11 +516,11 @@
                 <div class="work-descr">Pedidos em estabelecimentos saudáveis.</div>
               </div>
             </a></li>
-          <li class="work-item marketplaces"><a href="https://app.atronshoes.com.br" target="_blank">
+          <li class="work-item marketplaces"><a href="https://mobileshoes.com.br" target="_blank">
               <div class="work-image"><img src="assets/images/dreamobs/atron.png" alt="Portfolio Item" />
               </div>
               <div class="work-caption font-alt">
-                <h3 class="work-title">Atron App</h3>
+                <h3 class="work-title">Mobile Shoes</h3>
                 <div class="work-descr">Pedidos de calçados diretamente com os fabricantes.</div>
               </div>
             </a></li>
@@ -697,7 +701,7 @@
                 </div>
               </div>
             </div> -->
-            <!-- <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+      <!-- <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
                           <div class="team-item">
                             <div class="team-image"><img src="assets/images/team-3.jpg" alt="Member Photo"/>
                               <div class="team-detail">
@@ -727,10 +731,10 @@
                             </div>
                           </div>
                         </div> -->
-          </div>
-        </div>
-      </section>
-      <!-- <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
+    </div>
+    </div>
+    </section>
+    <!-- <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
                     <div class="testimonials-slider pt-140 pb-140">
                       <ul class="slides">
                         <li>
@@ -808,7 +812,7 @@
                       </ul>
                     </div>
                   </section> -->
-      <!-- <section class="module" id="news">
+    <!-- <section class="module" id="news">
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">
@@ -862,134 +866,134 @@
                       </div>
                     </div>
                   </section> -->
-      <div class="module-small bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
-              <div class="callout-text font-alt">
-                <h3 class="callout-title">Receba Nossas Novidades</h3>
-                <p>Fique por dentro de todas as nossas criações.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
-              <div class="callout-btn-box">
-                <form id="subscription-form" role="form" method="post" enctype="text/plain">
-                  <div class="input-group">
-                    <input class="form-control" type="email" id="semail" name="semail" placeholder="Seu E-mail"
-                      data-validation-required-message="Por favor informe o seu E-mail" required="required" /><span
-                      class="input-group-btn">
-                      <button class="btn btn-g btn-round" id="subscription-form-submit"
-                        type="submit">Confirmar</button></span>
-                  </div>
-                </form>
-                <div class="text-center" id="subscription-response"></div>
-              </div>
+    <div class="module-small bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+            <div class="callout-text font-alt">
+              <h3 class="callout-title">Receba Nossas Novidades</h3>
+              <p>Fique por dentro de todas as nossas criações.</p>
             </div>
           </div>
-        </div>
-      </div>
-      <section class="module" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt">Contato</h2>
-              <div class="module-subtitle font-serif"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-
-              <div style="margin-bottom: 5px; font-weight: 16px;">
-                <a href="https://api.whatsapp.com/send?phone=5516988579349" target="_blank">
-                  <b>WhatsApp:</b> (16) 9 8857-9349
-                </a>
-              </div>
-
-              <div style="margin-bottom: 30px; font-weight: 16px;">
-                <a href="mailto:contato@dreamobs.com" target="_top">
-                  <b>E-mail:</b> contato@dreamobs.com
-                </a>
-              </div>
-
-              <form id="contactForm" role="form" method="post" enctype="text/plain">
-                <div class="form-group">
-                  <label class="sr-only" for="name">Nome</label>
-                  <input class="form-control" type="text" id="name" name="name" placeholder="Seu Nome*"
-                    required="required" data-validation-required-message="Por favor informe seu nome." />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <label class="sr-only" for="email">E-mail</label>
-                  <input class="form-control" type="email" id="email" name="email" placeholder="Seu E-mail*"
-                    required="required" data-validation-required-message="Por favor informe o seu E-mail" />
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="7" id="message" name="message" placeholder="Mensagem*"
-                    required="required" data-validation-required-message="Por favor digite uma mensagem."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="text-center">
-                  <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Enviar</button>
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="callout-btn-box">
+              <form id="subscription-form" role="form" method="post" enctype="text/plain">
+                <div class="input-group">
+                  <input class="form-control" type="email" id="semail" name="semail" placeholder="Seu E-mail"
+                    data-validation-required-message="Por favor informe o seu E-mail" required="required" /><span
+                    class="input-group-btn">
+                    <button class="btn btn-g btn-round" id="subscription-form-submit"
+                      type="submit">Confirmar</button></span>
                 </div>
               </form>
-              <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              <div class="text-center" id="subscription-response"></div>
             </div>
-          </div>
-        </div>
-      </section>
-      <div class="module-small bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="widget">
-                <h5 class="widget-title font-alt">Sobre a Dreamobs</h5>
-                <p>Fábrica de Software fundada em Franca - São Paulo, em 2017. Especializada no desenvolvimento de
-                  aplicações computacionais em núvem e de alto desempenho.</p>
-                <p>Telefone: +55 16 9 8857-9349</p>
-                <p>Email:<a href="mailTo:contato@dreamobs.com" target="_top"> contato@dreamobs.com</a></p>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
-      <hr class="divider-d">
-      <footer class="footer bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
+    </div>
+    <section class="module" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2 class="module-title font-alt">Contato</h2>
+            <div class="module-subtitle font-serif"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
 
-              <p class="copyright font-alt">&copy;
-                <script>
-                  document.write((new Date()).getFullYear());
-                </script>
-                &nbsp;
-                <a href="index.html">Dreamobs</a>, todos os direitos reservados.
-              </p>
+            <div style="margin-bottom: 5px; font-weight: 16px;">
+              <a href="https://api.whatsapp.com/send?phone=5516988579349" target="_blank">
+                <b>WhatsApp:</b> (16) 9 8857-9349
+              </a>
             </div>
-            <div class="col-sm-6">
-              <div class="footer-social-links">
-                <a href="https://www.facebook.com/dreamobs/" target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5516988579349" target="_blank">
-                  <i class="fa fa-whatsapp"></i>
-                </a>
+
+            <div style="margin-bottom: 30px; font-weight: 16px;">
+              <a href="mailto:contato@dreamobs.com" target="_top">
+                <b>E-mail:</b> contato@dreamobs.com
+              </a>
+            </div>
+
+            <form id="contactForm" role="form" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label class="sr-only" for="name">Nome</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Seu Nome*"
+                  required="required" data-validation-required-message="Por favor informe seu nome." />
+                <p class="help-block text-danger"></p>
               </div>
+              <div class="form-group">
+                <label class="sr-only" for="email">E-mail</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="Seu E-mail*"
+                  required="required" data-validation-required-message="Por favor informe o seu E-mail" />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="7" id="message" name="message" placeholder="Mensagem*"
+                  required="required" data-validation-required-message="Por favor digite uma mensagem."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Enviar</button>
+              </div>
+            </form>
+            <div class="ajax-response font-alt" id="contactFormResponse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="module-small bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="widget">
+              <h5 class="widget-title font-alt">Sobre a Dreamobs</h5>
+              <p>Fábrica de Software fundada em Franca - São Paulo, em 2017. Especializada no desenvolvimento de
+                aplicações computacionais em núvem e de alto desempenho.</p>
+              <p>Telefone: +55 16 9 8857-9349</p>
+              <p>Email:<a href="mailTo:contato@dreamobs.com" target="_top"> contato@dreamobs.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr class="divider-d">
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+
+            <p class="copyright font-alt">&copy;
+              <script>
+                document.write((new Date()).getFullYear());
+              </script>
+              &nbsp;
+              <a href="index.html">Dreamobs</a>, todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="footer-social-links">
+              <a href="https://www.facebook.com/dreamobs/" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=5516988579349" target="_blank">
+                <i class="fa fa-whatsapp"></i>
+              </a>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
     </div>
     <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
   </main>
 
   <!--  JavaScripts ============================================= -->
-  <script src="assets/lib/jquery/dist/jquery.js"></script>
+  <script src="assets/lib/jquery/dist/jquery.min.js"></script>
   <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="assets/lib/wow/dist/wow.js"></script>
-  <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+  <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
   <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
   <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
   <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
